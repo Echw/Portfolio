@@ -1,3 +1,81 @@
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.main_container {
+  background: radial-gradient(
+    27.53% 49.43% at 57.71% 56.54%,
+    #b3c8c2 0%,
+    #256e83 37.81%,
+    #15394a 71.67%,
+    #09111c 100%
+  );
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+    height: 100%;
+  }
+
+  .title {
+    position: absolute;
+    color: white;
+    font-size: 7rem;
+    font-weight: 900;
+    top: 52%;
+  }
+
+  .frame_ {
+    &left {
+      left: 15%;
+      height: 132%;
+
+      &right {
+        left: 18%;
+      }
+    }
+  }
+
+  .bush_ {
+    &left {
+      left: 15%;
+      height: 80%;
+      bottom: 0%;
+    }
+
+    &right {
+      left: 18%;
+      height: 81%;
+      bottom: 0%;
+    }
+  }
+
+  .shadow {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    &_left {
+      left: 0%;
+      background: linear-gradient(90deg, #000000 45%, rgba(0, 0, 0, 0) 68%);
+    }
+    &_right {
+      right: 0%;
+      background: linear-gradient(
+        270.2deg,
+        #000000 44.95%,
+        rgba(0, 0, 0, 0) 57.74%
+      );
+    }
+  }
 }
